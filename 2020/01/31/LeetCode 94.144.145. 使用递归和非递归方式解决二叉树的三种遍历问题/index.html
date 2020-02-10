@@ -6,21 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://imaginee.cn">
-  <title>Archives | a_Gen 那咋办嘛！</title>
+  <title>LeetCode 94.144.145. 使用递归和非递归方式解决二叉树的三种遍历问题 | a_Gen 那咋办嘛！</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="记录自己所学习的东西，用于总结和复习">
-<meta property="og:type" content="website">
-<meta property="og:title" content="a_Gen 那咋办嘛！">
-<meta property="og:url" content="http://imaginee.cn/archives/index.html">
+  <meta name="description" content="二叉树的遍历问题可以说是基础内容，而且必须要掌握的，下面我将使用递归和辅助栈的方式来实现二叉树的前、中、后序遍历！具体的理论和实现思路，可以看一下左神的算法面试课程中的二叉树(1)，再进行编码和实践，有啥疑惑可以评论区留言哈！  1 使用递归方式实现三种遍历方式1.1 前序遍历遍历方式： 根 -&gt; 左 -&gt; 右 123456789101112131415class Solution">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LeetCode 94.144.145. 使用递归和非递归方式解决二叉树的三种遍历问题">
+<meta property="og:url" content="http://imaginee.cn/2020/01/31/LeetCode%2094.144.145.%20%E4%BD%BF%E7%94%A8%E9%80%92%E5%BD%92%E5%92%8C%E9%9D%9E%E9%80%92%E5%BD%92%E6%96%B9%E5%BC%8F%E8%A7%A3%E5%86%B3%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E4%B8%89%E7%A7%8D%E9%81%8D%E5%8E%86%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="a_Gen 那咋办嘛！">
-<meta property="og:description" content="记录自己所学习的东西，用于总结和复习">
+<meta property="og:description" content="二叉树的遍历问题可以说是基础内容，而且必须要掌握的，下面我将使用递归和辅助栈的方式来实现二叉树的前、中、后序遍历！具体的理论和实现思路，可以看一下左神的算法面试课程中的二叉树(1)，再进行编码和实践，有啥疑惑可以评论区留言哈！  1 使用递归方式实现三种遍历方式1.1 前序遍历遍历方式： 根 -&gt; 左 -&gt; 右 123456789101112131415class Solution">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-01-31T04:12:57.000Z">
+<meta property="article:modified_time" content="2020-02-09T08:17:46.251Z">
 <meta property="article:author" content="a_Gen">
-<meta property="article:tag" content="blog">
-<meta property="article:tag" content=" Java">
-<meta property="article:tag" content=" Algorithm">
+<meta property="article:tag" content="LeetCode">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="a_Gen 那咋办嘛！" type="application/atom+xml">
@@ -206,95 +206,147 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-LeetCode 94.144.145. 使用递归和非递归方式解决二叉树的三种遍历问题" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/02/02/IDEA%202019.9.3%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/" class="archive-article-date">
-        <time datetime="2020-02-02T04:12:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-02</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/02/02/IDEA%202019.9.3%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/" target="_blank">IDEA常用快捷键</a>
   
+    <h1 class="article-title" itemprop="name">
+      LeetCode 94.144.145. 使用递归和非递归方式解决二叉树的三种遍历问题
     </h1>
   
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">IDEA</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/开发工具//" class="article-tag-list-link color5">开发工具</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 <a href="/2020/01/31/LeetCode%2094.144.145.%20%E4%BD%BF%E7%94%A8%E9%80%92%E5%BD%92%E5%92%8C%E9%9D%9E%E9%80%92%E5%BD%92%E6%96%B9%E5%BC%8F%E8%A7%A3%E5%86%B3%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E4%B8%89%E7%A7%8D%E9%81%8D%E5%8E%86%E9%97%AE%E9%A2%98/" class="archive-article-date">
         <time datetime="2020-01-31T04:12:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-31</time>
 </a>
 
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">1.1k字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">5分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <blockquote>
+<p>二叉树的遍历问题可以说是基础内容，而且必须要掌握的，下面我将使用递归和辅助栈的方式来实现二叉树的前、中、后序遍历！具体的理论和实现思路，可以看一下<a href="https://www.bilibili.com/video/av54147410?p=17" target="_blank" rel="noopener">左神的算法面试课程中的二叉树(1)</a>，再进行编码和实践，有啥疑惑可以评论区留言哈！</p>
+</blockquote>
+<h2 id="1-使用递归方式实现三种遍历方式"><a href="#1-使用递归方式实现三种遍历方式" class="headerlink" title="1 使用递归方式实现三种遍历方式"></a>1 使用递归方式实现三种遍历方式</h2><h3 id="1-1-前序遍历"><a href="#1-1-前序遍历" class="headerlink" title="1.1 前序遍历"></a>1.1 前序遍历</h3><p><strong>遍历方式：</strong> 根 -&gt; 左 -&gt; 右</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(TreeNode* node)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(node == <span class="literal">nullptr</span>) <span class="keyword">return</span> ;</span><br><span class="line">        res.push_back(node-&gt;val);</span><br><span class="line">        dfs(node-&gt;left);</span><br><span class="line">        dfs(node-&gt;right);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; <span class="title">preorderTraversal</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="literal">NULL</span>) <span class="keyword">return</span> res;</span><br><span class="line">        dfs(root);</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p><strong>时间复杂度</strong>：O(N) ，访问每个节点恰好一次<br><strong>空间复杂度</strong>：O(N)，取决于树的结构，最坏情况存储整棵树，因此空间复杂度是 O(N)<br><strong>ps</strong>：本文章中的时间、空间复杂度都是O(N)，为了文章的简洁性，下面将不再阐述</p>
+<h3 id="1-2-中序遍历"><a href="#1-2-中序遍历" class="headerlink" title="1.2 中序遍历"></a>1.2 中序遍历</h3><p><strong>遍历方式：</strong> 左 -&gt; 根 -&gt; 右</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(TreeNode* node)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(node == <span class="literal">nullptr</span>) <span class="keyword">return</span> ;</span><br><span class="line">        dfs(node-&gt;left);</span><br><span class="line">        res.push_back(node-&gt;val);</span><br><span class="line">        dfs(node-&gt;right);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; <span class="title">inorderTraversal</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="literal">NULL</span>) <span class="keyword">return</span> res;</span><br><span class="line">        dfs(root);</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="1-3-后序遍历"><a href="#1-3-后序遍历" class="headerlink" title="1.3 后序遍历"></a>1.3 后序遍历</h3><p><strong>遍历方式：</strong> 左 -&gt; 右 -&gt; 根</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(TreeNode* node)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(node == <span class="literal">nullptr</span>) <span class="keyword">return</span> ;</span><br><span class="line">        dfs(node-&gt;left);</span><br><span class="line">        dfs(node-&gt;right);</span><br><span class="line">        res.push_back(node-&gt;val);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; <span class="title">postorderTraversal</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="literal">NULL</span>) <span class="keyword">return</span> res;</span><br><span class="line">        dfs(root);</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="2-使用非递归方式实现三种遍历方式"><a href="#2-使用非递归方式实现三种遍历方式" class="headerlink" title="2 使用非递归方式实现三种遍历方式"></a>2 使用非递归方式实现三种遍历方式</h2><h3 id="2-1-前序遍历"><a href="#2-1-前序遍历" class="headerlink" title="2.1 前序遍历"></a>2.1 前序遍历</h3><p><strong>遍历方式：</strong> 根 -&gt; 左 -&gt; 右</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; <span class="title">preorderTraversal</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="literal">NULL</span>) <span class="keyword">return</span> res;</span><br><span class="line">        <span class="built_in">stack</span>&lt;TreeNode*&gt; s;</span><br><span class="line">        s.push(root);</span><br><span class="line">        <span class="keyword">while</span>(!s.empty()) &#123;</span><br><span class="line">            TreeNode* cur = s.top();</span><br><span class="line">            s.pop();</span><br><span class="line">            res.push_back(cur-&gt;val);</span><br><span class="line">            <span class="keyword">if</span>(cur-&gt;right) s.push(cur-&gt;right);</span><br><span class="line">            <span class="keyword">if</span>(cur-&gt;left) s.push(cur-&gt;left);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="2-2-后序遍历（注意这里是后序遍历emmm）"><a href="#2-2-后序遍历（注意这里是后序遍历emmm）" class="headerlink" title="2.2 后序遍历（注意这里是后序遍历emmm）"></a>2.2 后序遍历（注意这里是后序遍历emmm）</h3><p><strong>遍历方式：</strong> 左 -&gt; 右 -&gt; 根</p>
+<p><strong>方法一</strong>：前序遍历的顺序为 根-&gt;左-&gt;右，与后序遍历的逆序（根-&gt;右-&gt;左）有些相似，因此可以使用前序遍历的思想，最后再倒置向量即可。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; <span class="title">postorderTraversal</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="literal">NULL</span>) <span class="keyword">return</span> res;</span><br><span class="line">        <span class="built_in">stack</span>&lt;TreeNode*&gt; s;</span><br><span class="line">        s.push(root);</span><br><span class="line">        <span class="keyword">while</span>(!s.empty()) &#123;</span><br><span class="line">            TreeNode* cur = s.top();</span><br><span class="line">            s.pop();</span><br><span class="line">            res.push_back(cur-&gt;val);</span><br><span class="line">            <span class="keyword">if</span>(cur-&gt;left) s.push(cur-&gt;left);      <span class="comment">//注意此处，前序遍历为先右后左 </span></span><br><span class="line">            <span class="keyword">if</span>(cur-&gt;right) s.push(cur-&gt;right);</span><br><span class="line">        &#125;</span><br><span class="line">        reverse(res.begin(), res.end());</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p><strong>方法二</strong>：使用两个栈实现（其实和方法一基本是一样的，多开了一个栈）</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; <span class="title">postorderTraversal</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="literal">NULL</span>) <span class="keyword">return</span> res;</span><br><span class="line">        <span class="built_in">stack</span>&lt;TreeNode*&gt; s1, s2;</span><br><span class="line">        s1.push(root);</span><br><span class="line">        <span class="keyword">while</span>(!s1.empty()) &#123;</span><br><span class="line">            TreeNode* cur = s1.top();</span><br><span class="line">            s1.pop();</span><br><span class="line">            s2.push(cur);</span><br><span class="line">            <span class="keyword">if</span>(cur-&gt;left) s1.push(cur-&gt;left);</span><br><span class="line">            <span class="keyword">if</span>(cur-&gt;right) s1.push(cur-&gt;right);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(!s2.empty()) res.push_back(s2.top()-&gt;val), s2.pop();</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p><strong>方法三</strong>：使用一个栈实现</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; <span class="title">postorderTraversal</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="literal">NULL</span>) <span class="keyword">return</span> res;</span><br><span class="line">        <span class="built_in">stack</span>&lt;TreeNode*&gt; s;</span><br><span class="line">        s.push(root);</span><br><span class="line">        TreeNode* h;               <span class="comment">//最近一次弹出的结点</span></span><br><span class="line">        TreeNode* cur;</span><br><span class="line">        h = root, cur = <span class="literal">NULL</span>;</span><br><span class="line">        <span class="keyword">while</span>(!s.empty()) &#123;</span><br><span class="line">            cur = s.top();</span><br><span class="line">            <span class="keyword">if</span>(cur-&gt;left &amp;&amp; h != cur-&gt;left &amp;&amp; h != cur-&gt;right) &#123;</span><br><span class="line">                s.push(cur-&gt;left);</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span>(cur-&gt;right &amp;&amp; h != cur-&gt;right) &#123;</span><br><span class="line">                s.push(cur-&gt;right);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                res.push_back(cur-&gt;val);</span><br><span class="line">                s.pop();</span><br><span class="line">                h = cur;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-3-中序遍历"><a href="#2-3-中序遍历" class="headerlink" title="2.3 中序遍历"></a>2.3 中序遍历</h3><p><strong>遍历方式：</strong> 左 -&gt; 根 -&gt; 右</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; <span class="title">inorderTraversal</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="literal">NULL</span>) <span class="keyword">return</span> res;</span><br><span class="line">        <span class="built_in">stack</span>&lt;TreeNode*&gt; s;</span><br><span class="line">        TreeNode* cur = root;</span><br><span class="line">        <span class="keyword">while</span>(cur != <span class="literal">NULL</span> || !s.empty()) &#123;</span><br><span class="line">            <span class="keyword">while</span>(cur != <span class="literal">NULL</span>) &#123;</span><br><span class="line">                s.push(cur);</span><br><span class="line">                cur = cur-&gt;left;</span><br><span class="line">            &#125;</span><br><span class="line">            cur = s.top(), s.pop();</span><br><span class="line">            res.push_back(cur-&gt;val);</span><br><span class="line">            cur = cur-&gt;right;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p><strong>结语</strong>：①如果你是小白，之前没有接触过二叉树相关问题的话，代码可能会有点难理解。可以跟着文章开头的视频链接，跟着思路，并食用代码实现，反复练习效果更佳！（可以先记住一个简单常用的套路解决问题）<br>②如果你是个大佬，对上述代码有什么改进或优化的地方，欢迎指出！</p>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/zhifubao.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixin.jpg">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/01/31/LeetCode%2094.144.145.%20%E4%BD%BF%E7%94%A8%E9%80%92%E5%BD%92%E5%92%8C%E9%9D%9E%E9%80%92%E5%BD%92%E6%96%B9%E5%BC%8F%E8%A7%A3%E5%86%B3%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E4%B8%89%E7%A7%8D%E9%81%8D%E5%8E%86%E9%97%AE%E9%A2%98/" target="_blank">LeetCode 94.144.145. 使用递归和非递归方式解决二叉树的三种遍历问题</a>
-  
-    </h1>
-  
+      </a>
+    </div>
+    
 
-
-        <div class="article-info info-on-right">
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          a_Gen
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://imaginee.cn/2020/01/31/LeetCode 94.144.145. 使用递归和非递归方式解决二叉树的三种遍历问题/" title="LeetCode 94.144.145. 使用递归和非递归方式解决二叉树的三种遍历问题" target="_blank">http://imaginee.cn/2020/01/31/LeetCode 94.144.145. 使用递归和非递归方式解决二叉树的三种遍历问题/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -306,7 +358,7 @@
 		</ul>
 	</div>
 
-          
+    
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -319,233 +371,124 @@
 	</div>
 
 
+    
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://imaginee.cn/2020/01/31/LeetCode%2094.144.145.%20%E4%BD%BF%E7%94%A8%E9%80%92%E5%BD%92%E5%92%8C%E9%9D%9E%E9%80%92%E5%BD%92%E6%96%B9%E5%BC%8F%E8%A7%A3%E5%86%B3%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E4%B8%89%E7%A7%8D%E9%81%8D%E5%8E%86%E9%97%AE%E9%A2%98/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/01/26/LeetCode%20102.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%B1%82%E6%AC%A1%E9%81%8D%E5%8E%86/" class="archive-article-date">
-        <time datetime="2020-01-26T04:12:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-26</time>
-</a>
 
+
+<nav id="article-nav">
+  
+    <a href="/2020/02/02/IDEA%202019.9.3%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          IDEA常用快捷键
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/01/26/LeetCode%20102.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%B1%82%E6%AC%A1%E9%81%8D%E5%8E%86/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">LeetCode 102.二叉树的层次遍历</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/01/26/LeetCode%20102.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%B1%82%E6%AC%A1%E9%81%8D%E5%8E%86/" target="_blank">LeetCode 102.二叉树的层次遍历</a>
-  
-    </h1>
-  
+        
+        
+    </div>
+</aside>
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">LeetCode</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/数据结构与算法//" class="article-tag-list-link color3">数据结构与算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/01/25/LeetCode%20200.%E5%B2%9B%E5%B1%BF%E6%95%B0%E9%87%8F/" class="archive-article-date">
-        <time datetime="2020-01-25T04:12:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-25</time>
-</a>
 
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/01/25/LeetCode%20200.%E5%B2%9B%E5%B1%BF%E6%95%B0%E9%87%8F/" target="_blank">LeetCode 200.岛屿数量</a>
-  
-    </h1>
-  
+<div id="SOHUCS" sid="LeetCode 94.144.145. 使用递归和非递归方式解决二叉树的三种遍历问题" ></div> 
+<script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: "true",
+        conf: "true"
+    });
+</script>
+</script>
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">LeetCode</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/数据结构与算法//" class="article-tag-list-link color3">数据结构与算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/01/21/LeetCode%20752.%E6%89%93%E5%BC%80%E8%BD%AC%E7%9B%98%E9%94%81/" class="archive-article-date">
-        <time datetime="2020-01-21T04:12:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-21</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/01/21/LeetCode%20752.%E6%89%93%E5%BC%80%E8%BD%AC%E7%9B%98%E9%94%81/" target="_blank">LeetCode 752.打开转盘锁</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">LeetCode</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/数据结构与算法//" class="article-tag-list-link color3">数据结构与算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/01/18/LeetCode%E6%8E%A2%E7%B4%A2%EF%BC%9A%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95%EF%BC%88%E6%95%B0%E7%BB%84%E7%AF%87%EF%BC%89/" class="archive-article-date">
-        <time datetime="2020-01-18T04:12:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-18</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/01/18/LeetCode%E6%8E%A2%E7%B4%A2%EF%BC%9A%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95%EF%BC%88%E6%95%B0%E7%BB%84%E7%AF%87%EF%BC%89/" target="_blank">LeetCode探索：初级算法（数组篇）</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">LeetCode</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/数据结构与算法//" class="article-tag-list-link color3">数据结构与算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -586,8 +529,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
